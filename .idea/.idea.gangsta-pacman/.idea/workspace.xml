@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a5a72e0-a42c-42db-8386-d0d0912c4c21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/.gitkeep.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/EnemyComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/EnemyComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events/CollisionEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events/CollisionEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Entities.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Entities.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/GameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <marker date="1587847501303" expanded="true" signature="44:174" ph="{...}" />
+                <marker date="1587847501303" expanded="true" signature="80:172" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <marker date="1587842642277" expanded="true" signature="24:71" ph="{...}" />
+                <marker date="1587842642277" expanded="true" signature="56:69" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding>
+                <marker date="1587847501296" expanded="false" signature="6:60" ph="..." />
+                <marker date="1587847501296" expanded="true" signature="83:528" ph="{...}" />
+                <marker date="1587847501296" expanded="true" signature="131:526" ph="{...}" />
+                <marker date="1587847501296" expanded="true" signature="212:522" ph="{...}" />
+                <marker date="1587847501296" expanded="true" signature="255:514" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <marker date="1587849762760" expanded="true" signature="6:41" ph="..." />
+                <marker date="1587849762760" expanded="true" signature="64:296" ph="{...}" />
+                <marker date="1587849762760" expanded="true" signature="117:294" ph="{...}" />
+                <marker date="1587849762760" expanded="true" signature="223:290" ph="{...}" />
+                <marker date="1587849762760" expanded="true" signature="266:282" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <marker date="1587849762781" expanded="true" signature="6:93" ph="..." />
+                <marker date="1587849762781" expanded="true" signature="120:921" ph="{...}" />
+                <marker date="1587849762781" expanded="true" signature="173:919" ph="{...}" />
+                <marker date="1587849762781" expanded="true" signature="182:862" ph="Unity Events" />
+                <marker date="1587849762781" expanded="true" signature="232:587" ph="{...}" />
+                <marker date="1587849762781" expanded="true" signature="277:352" ph="{...}" />
+                <marker date="1587849762781" expanded="true" signature="448:581" ph="{...}" />
+                <marker date="1587849762781" expanded="true" signature="636:846" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <marker date="1587849762747" expanded="false" signature="6:60" ph="..." />
+                <marker date="1587849762747" expanded="true" signature="103:669" ph="{...}" />
+                <marker date="1587849762747" expanded="true" signature="149:667" ph="{...}" />
+                <marker date="1587849762747" expanded="true" signature="302:663" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding>
+                <marker date="1587849762775" expanded="false" signature="6:41" ph="..." />
+                <marker date="1587849762775" expanded="true" signature="84:299" ph="{...}" />
+                <marker date="1587849762775" expanded="true" signature="129:297" ph="{...}" />
+                <marker date="1587849762775" expanded="true" signature="184:293" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <folding>
+                <marker date="1587849762786" expanded="false" signature="6:107" ph="..." />
+                <marker date="1587849762786" expanded="true" signature="150:772" ph="{...}" />
+                <marker date="1587849762786" expanded="true" signature="197:770" ph="{...}" />
+                <marker date="1587849762786" expanded="true" signature="304:766" ph="{...}" />
+                <marker date="1587849762786" expanded="true" signature="509:549" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <marker date="1587849762767" expanded="true" signature="6:60" ph="..." />
+                <marker date="1587849762767" expanded="true" signature="83:771" ph="{...}" />
+                <marker date="1587849762767" expanded="true" signature="128:769" ph="{...}" />
+                <marker date="1587849762767" expanded="true" signature="233:765" ph="{...}" />
+                <marker date="1587849762767" expanded="true" signature="322:759" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding>
+                <marker date="1587842902193" expanded="false" signature="6:31" ph="..." />
+                <marker date="1587842902193" expanded="true" signature="57:157" ph="{...}" />
+                <marker date="1587842902193" expanded="true" signature="91:155" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/EcsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events/CollisionEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Entities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/EnemyComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/GameService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Pacman.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Proxies/Implementations/GameProxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/GameService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Proxies/Proxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/PacmanMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Proxies/Implementations/PacmanProxy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/CollisionComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events/CollisionEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Proxies/ViewObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Components/EnemyComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Proxies/Implementations/EnemyViewObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.gangsta-pacman/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="y" value="35" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+              <item name="Components" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+              <item name="Components" type="1045f7f1:UnityExplorerNode" />
+              <item name="Events" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+              <item name="Systems" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+              <item name="ViewObjects" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Ecs" type="1045f7f1:UnityExplorerNode" />
+              <item name="ViewObjects" type="1045f7f1:UnityExplorerNode" />
+              <item name="Implementations" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Model" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Services" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a5a72e0-a42c-42db-8386-d0d0912c4c21" name="Default Changelist" comment="" />
+      <created>1587841001040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587841001040</updated>
+      <workItem from="1587841012951" duration="6651000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6651000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="CodeStream" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/EcsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <marker date="1587848179559" expanded="true" signature="6:57" ph="..." />
+            <marker date="1587848179559" expanded="true" signature="72:869" ph="{...}" />
+            <marker date="1587848179559" expanded="true" signature="116:867" ph="{...}" />
+            <marker date="1587848179559" expanded="true" signature="287:631" ph="{...}" />
+            <marker date="1587848179559" expanded="true" signature="658:693" ph="{...}" />
+            <marker date="1587848179559" expanded="true" signature="723:863" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/Events/CollisionEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <marker date="1587848082087" expanded="true" signature="51:154" ph="{...}" />
+            <marker date="1587848082087" expanded="true" signature="84:152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Entities.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <marker date="1587841501378" expanded="false" signature="6:47" ph="..." />
+            <marker date="1587841501378" expanded="true" signature="64:613" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="105:165" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="185:261" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="286:362" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="384:455" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="480:556" ph="{...}" />
+            <marker date="1587841501378" expanded="true" signature="578:611" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Services/GameService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1587845734376" expanded="true" signature="18:101" ph="{...}" />
+            <marker date="1587845734376" expanded="true" signature="47:99" ph="{...}" />
+            <marker date="1587845734376" expanded="true" signature="76:95" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/EnemyComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <marker date="1587849649439" expanded="true" signature="24:92" ph="{...}" />
+            <marker date="1587849649439" expanded="true" signature="57:90" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/ViewObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <marker date="1587849762781" expanded="true" signature="6:93" ph="..." />
+            <marker date="1587849762781" expanded="true" signature="120:921" ph="{...}" />
+            <marker date="1587849762781" expanded="true" signature="173:919" ph="{...}" />
+            <marker date="1587849762781" expanded="true" signature="182:862" ph="Unity Events" />
+            <marker date="1587849762781" expanded="true" signature="232:587" ph="{...}" />
+            <marker date="1587849762781" expanded="true" signature="277:352" ph="{...}" />
+            <marker date="1587849762781" expanded="true" signature="448:581" ph="{...}" />
+            <marker date="1587849762781" expanded="true" signature="636:846" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/PacmanComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <marker date="1587842902193" expanded="false" signature="6:31" ph="..." />
+            <marker date="1587842902193" expanded="true" signature="57:157" ph="{...}" />
+            <marker date="1587842902193" expanded="true" signature="91:155" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/MovementComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1587847501303" expanded="true" signature="44:174" ph="{...}" />
+            <marker date="1587847501303" expanded="true" signature="80:172" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Components/GameComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <marker date="1587842642277" expanded="true" signature="24:71" ph="{...}" />
+            <marker date="1587842642277" expanded="true" signature="56:69" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/EnemyViewObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <marker date="1587849762747" expanded="false" signature="6:60" ph="..." />
+            <marker date="1587849762747" expanded="true" signature="103:669" ph="{...}" />
+            <marker date="1587849762747" expanded="true" signature="149:667" ph="{...}" />
+            <marker date="1587849762747" expanded="true" signature="302:663" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/GameViewObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <marker date="1587849762775" expanded="false" signature="6:41" ph="..." />
+            <marker date="1587849762775" expanded="true" signature="84:299" ph="{...}" />
+            <marker date="1587849762775" expanded="true" signature="129:297" ph="{...}" />
+            <marker date="1587849762775" expanded="true" signature="184:293" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/ViewObjects/Implementations/PacmanViewObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <marker date="1587849762786" expanded="false" signature="6:107" ph="..." />
+            <marker date="1587849762786" expanded="true" signature="150:772" ph="{...}" />
+            <marker date="1587849762786" expanded="true" signature="197:770" ph="{...}" />
+            <marker date="1587849762786" expanded="true" signature="304:766" ph="{...}" />
+            <marker date="1587849762786" expanded="true" signature="509:549" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/InputSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <marker date="1587849762767" expanded="true" signature="6:60" ph="..." />
+            <marker date="1587849762767" expanded="true" signature="83:771" ph="{...}" />
+            <marker date="1587849762767" expanded="true" signature="128:769" ph="{...}" />
+            <marker date="1587849762767" expanded="true" signature="233:765" ph="{...}" />
+            <marker date="1587849762767" expanded="true" signature="322:759" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/MovementSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1587847501296" expanded="false" signature="6:60" ph="..." />
+            <marker date="1587847501296" expanded="true" signature="83:528" ph="{...}" />
+            <marker date="1587847501296" expanded="true" signature="131:526" ph="{...}" />
+            <marker date="1587847501296" expanded="true" signature="212:522" ph="{...}" />
+            <marker date="1587847501296" expanded="true" signature="255:514" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ecs/Systems/EnemyRotationSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <marker date="1587849762760" expanded="true" signature="6:41" ph="..." />
+            <marker date="1587849762760" expanded="true" signature="64:296" ph="{...}" />
+            <marker date="1587849762760" expanded="true" signature="117:294" ph="{...}" />
+            <marker date="1587849762760" expanded="true" signature="223:290" ph="{...}" />
+            <marker date="1587849762760" expanded="true" signature="266:282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

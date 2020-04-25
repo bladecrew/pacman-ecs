@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\artem\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\artem\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_gangsta-pacman.-1279777627.00" t="ExcludeRecursive" />
+    <e p="C:\Users\artem\Documents\github\gangsta-pacman" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Ecs" t="Include">
+            <e p="Components" t="Include">
+              <e p="EnemyComponent.cs" t="Include" />
+              <e p="Events" t="Include">
+                <e p="CollisionEvent.cs" t="Include" />
+              </e>
+              <e p="GameComponent.cs" t="Include" />
+              <e p="MovementComponent.cs" t="Include" />
+              <e p="PacmanComponent.cs" t="Include" />
+            </e>
+            <e p="EcsManager.cs" t="Include" />
+            <e p="Systems" t="Include">
+              <e p="EnemyRotationSystem.cs" t="Include" />
+              <e p="InputSystem.cs" t="Include" />
+              <e p="MovementSystem.cs" t="Include" />
+            </e>
+            <e p="ViewObjects" t="Include">
+              <e p="Implementations" t="Include">
+                <e p="EnemyViewObject.cs" t="Include" />
+                <e p="GameViewObject.cs" t="Include" />
+                <e p="PacmanViewObject.cs" t="Include" />
+              </e>
+              <e p="ViewObject.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Model" t="Include">
+            <e p="Entities.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="GameService.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="gangsta-pacman.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
