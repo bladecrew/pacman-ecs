@@ -1,3 +1,4 @@
+using Ecs.Components.Events;
 using Ecs.Systems;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -19,6 +20,8 @@ namespace Ecs
       _systems
         .Add(new InputSystem())
         .Add(new MovementSystem())
+        .Add(new EnemyRotationSystem())
+        .OneFrame<CollisionEvent>()
         .Init();
     
 #if UNITY_EDITOR

@@ -20,7 +20,7 @@ namespace Ecs.ViewObjects.Implementations
       enemyComponent.Damage = _damage;
 
       ref var movementComponent = ref entity.Set<MovementComponent>();
-      movementComponent.Direction = Vector3.zero;
+      movementComponent.Direction = Vector3.forward;
       movementComponent.Object = gameObject;
       movementComponent.Speed = _speed;
     }

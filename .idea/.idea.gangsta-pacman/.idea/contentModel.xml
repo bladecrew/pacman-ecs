@@ -16,6 +16,7 @@
               <e p="GameComponent.cs" t="Include" />
               <e p="MovementComponent.cs" t="Include" />
               <e p="PacmanComponent.cs" t="Include" />
+              <e p="RotationPointComponent.cs" t="Include" />
             </e>
             <e p="EcsManager.cs" t="Include" />
             <e p="Systems" t="Include">
@@ -28,6 +29,7 @@
                 <e p="EnemyViewObject.cs" t="Include" />
                 <e p="GameViewObject.cs" t="Include" />
                 <e p="PacmanViewObject.cs" t="Include" />
+                <e p="RotationPointViewObject.cs" t="Include" />
               </e>
               <e p="ViewObject.cs" t="Include" />
             </e>
