@@ -1,27 +1,32 @@
 using Ecs.Components.Events;
 using Ecs.Systems;
 using Leopotam.Ecs;
+using Services;
 using UnityEngine;
 
 namespace Ecs
 {
-  public class EcsManager : MonoBehaviour
+  public class GameManager : MonoBehaviour
   {
     public EcsWorld World = new EcsWorld();
-  
+
+    [SerializeField]
+    private GameObject[] _rotationPoints;
+    
     private EcsSystems _systems;
 
-    public static EcsManager Instance { get; private set; }
+    public static GameManager Instance { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
       Instance = this;
       _systems = new EcsSystems(World);
       _systems
+        .Add(new FindingDirectionSystem())
         .Add(new InputSystem())
         .Add(new MovementSystem())
-        .Add(new EnemyRotationSystem())
         .OneFrame<CollisionEvent>()
+        .Inject(new RaycastService(_rotationPoints))
         .Init();
     
 #if UNITY_EDITOR

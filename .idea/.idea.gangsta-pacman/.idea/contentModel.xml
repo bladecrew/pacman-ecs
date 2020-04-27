@@ -16,11 +16,10 @@
               <e p="GameComponent.cs" t="Include" />
               <e p="MovementComponent.cs" t="Include" />
               <e p="PacmanComponent.cs" t="Include" />
-              <e p="RotationPointComponent.cs" t="Include" />
             </e>
-            <e p="EcsManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="Systems" t="Include">
-              <e p="EnemyRotationSystem.cs" t="Include" />
+              <e p="FindingDirectionSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
             </e>
@@ -29,7 +28,6 @@
                 <e p="EnemyViewObject.cs" t="Include" />
                 <e p="GameViewObject.cs" t="Include" />
                 <e p="PacmanViewObject.cs" t="Include" />
-                <e p="RotationPointViewObject.cs" t="Include" />
               </e>
               <e p="ViewObject.cs" t="Include" />
             </e>
@@ -38,7 +36,7 @@
             <e p="Entities.cs" t="Include" />
           </e>
           <e p="Services" t="Include">
-            <e p="GameService.cs" t="Include" />
+            <e p="RaycastService.cs" t="Include" />
           </e>
         </e>
       </e>

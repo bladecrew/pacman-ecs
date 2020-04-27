@@ -11,25 +11,25 @@ namespace Ecs.ViewObjects
     
     private void Awake()
     {
-      if (EcsManager.Instance != null)
+      if (GameManager.Instance != null)
       {
-        Inject(EcsManager.Instance.World);
+        Inject(GameManager.Instance.World);
         return;
       }
 
       StartCoroutine(WaitInitializationThread());
       IEnumerator WaitInitializationThread()
       {
-        while(EcsManager.Instance == null)
+        while(GameManager.Instance == null)
           yield return new WaitForEndOfFrame();
         
         Awake();
       }
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
-      var entity = EcsManager.Instance.World.NewEntity();
+      var entity = GameManager.Instance.World.NewEntity();
       ref var component = ref entity.Set<CollisionEvent>();
       component.Target = other.gameObject;
       component.Teaser = gameObject;
