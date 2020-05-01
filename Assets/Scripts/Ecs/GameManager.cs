@@ -25,6 +25,7 @@ namespace Ecs
         .Add(new FindingDirectionSystem())
         .Add(new InputSystem())
         .Add(new MovementSystem())
+        .Add(new DamageSystem())
         .OneFrame<CollisionEvent>()
         .Inject(new RaycastService(_rotationPoints))
         .Init();
