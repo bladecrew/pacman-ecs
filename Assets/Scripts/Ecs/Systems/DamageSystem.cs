@@ -18,11 +18,9 @@ namespace Ecs.Systems
         var target = _filter.Get1(index).Target;
         var teaser = _filter.Get1(index).Teaser;
 
-        var pacman = _pacmanFilter
-          .Where(x => x.Object == teaser)
-          .FirstOrDefault();
+        var pacman = _pacmanFilter.FirstOrDefault(x => x.Object == teaser);
 
-        if (pacman == PacmanComponent.Null)
+        if (pacman.IsDefault())
           return;
 
         Debug.Log("Collision detected");

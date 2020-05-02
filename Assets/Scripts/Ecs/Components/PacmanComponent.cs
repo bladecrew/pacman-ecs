@@ -5,8 +5,6 @@ namespace Ecs.Components
 {
   public struct PacmanComponent
   {
-    public static PacmanComponent Null;
-
     public Pacman Pacman;
     public GameObject Object;
 
