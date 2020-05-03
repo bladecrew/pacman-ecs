@@ -1,13 +1,14 @@
-using System.Collections.Generic;
 using Ecs.Components;
 using Leopotam.Ecs;
-using Model;
 using UnityEngine;
 
 namespace Ecs.ViewObjects.Implementations
 {
   public class PacmanViewObject : ViewObject
   {
+    [SerializeField]
+    private float _health = 3f;
+    
     [SerializeField]
     private float _speed;
     
@@ -17,10 +18,8 @@ namespace Ecs.ViewObjects.Implementations
       
       ref var mainComponent = ref entity.Set<PacmanComponent>();
       mainComponent.Object = gameObject;
-      mainComponent.Pacman = new Pacman
-      {
-        Guns = new List<Gun>()
-      };
+      mainComponent.Health = _health;
+      mainComponent.Points = 0f;
 
       ref var movementComponent = ref entity.Set<MovementComponent>();
       movementComponent.Speed = _speed;

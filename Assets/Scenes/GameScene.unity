@@ -11549,7 +11549,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13898
+  m_Name: pb_Mesh13902
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12092,7 +12092,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.058e-42, y: 1.01e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -12236,6 +12236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86eb894f5894226ab7d4e51f8794fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _health: 3
   _speed: 1
 --- !u!135 &840910660
 SphereCollider:
@@ -12360,7 +12361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f9ab73f39c422992192da160c866f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 1
   _speed: 1
 --- !u!135 &894094163
 SphereCollider:
@@ -12670,7 +12671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f9ab73f39c422992192da160c866f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 1
   _speed: 1
 --- !u!135 &989664733
 SphereCollider:
@@ -12950,7 +12951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82f9ab73f39c422992192da160c866f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
+  _damage: 1
   _speed: 1
 --- !u!135 &1332202101
 SphereCollider:

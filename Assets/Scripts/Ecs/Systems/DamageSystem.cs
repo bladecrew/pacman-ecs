@@ -1,29 +1,35 @@
-using System.Linq;
 using Ecs.Components;
 using Ecs.Components.Events;
 using Leopotam.Ecs;
-using UnityEngine;
 
 namespace Ecs.Systems
 {
   public class DamageSystem : IEcsRunSystem
   {
-    private EcsFilter<CollisionEvent> _filter;
+    private EcsFilter<CollisionEvent> _collisionFilter;
     private EcsFilter<PacmanComponent> _pacmanFilter;
+    private EcsFilter<EnemyComponent> _enemiesFilter;
 
     public void Run()
     {
-      foreach (var index in _filter)
+      foreach (var index in _collisionFilter)
       {
-        var target = _filter.Get1(index).Target;
-        var teaser = _filter.Get1(index).Teaser;
+        var target = _collisionFilter.Get1(index).Target;
+        var teaser = _collisionFilter.Get1(index).Teaser;
 
-        var pacman = _pacmanFilter.FirstOrDefault(x => x.Object == teaser);
+        var pacmanECPair = _pacmanFilter.FirstOrDefault(x => x.Object == target);
 
-        if (pacman.IsDefault())
+        if (pacmanECPair == null)
           return;
 
-        Debug.Log("Collision detected");
+        var enemyECPair = _enemiesFilter.FirstOrDefault(x => x.Object == teaser);
+
+        if (enemyECPair == null)
+          return;
+
+        ref var pacmanComponent = ref pacmanECPair.Entity.Set<PacmanComponent>();
+
+        pacmanComponent.Health = pacmanECPair.Component.Health - enemyECPair.Component.Damage;
       }
     }
   }

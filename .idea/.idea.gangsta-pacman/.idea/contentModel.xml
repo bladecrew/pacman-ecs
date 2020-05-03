@@ -34,11 +34,11 @@
               <e p="ViewObject.cs" t="Include" />
             </e>
           </e>
-          <e p="Model" t="Include">
-            <e p="Entities.cs" t="Include" />
-          </e>
           <e p="Services" t="Include">
             <e p="RaycastService.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="EntityComponentPair.cs" t="Include" />
           </e>
         </e>
       </e>

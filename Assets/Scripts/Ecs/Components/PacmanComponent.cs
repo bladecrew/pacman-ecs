@@ -1,11 +1,11 @@
-using Model;
 using UnityEngine;
 
 namespace Ecs.Components
 {
   public struct PacmanComponent
   {
-    public Pacman Pacman;
+    public float Health;
+    public float Points;
     public GameObject Object;
 
     public static bool operator ==(PacmanComponent x, PacmanComponent y) => x.Equals(y);
@@ -14,12 +14,15 @@ namespace Ecs.Components
 
     public override bool Equals(object obj)
     {
-      return obj is PacmanComponent other && Equals(Pacman, other.Pacman) && Equals(Object, other.Object);
+      return obj is PacmanComponent other && 
+             Equals(Health, other.Health) && 
+             Equals(Points, other.Points) && 
+             Equals(Object, other.Object);
     }
 
     public override int GetHashCode()
     {
-      return ((Pacman != null ? Pacman.GetHashCode() : 0) * 397) ^ (Object != null ? Object.GetHashCode() : 0);
+      return Health.GetHashCode() ^ Points.GetHashCode() ^ (Object != null ? Object.GetHashCode() : 0);
     }
   }
 }

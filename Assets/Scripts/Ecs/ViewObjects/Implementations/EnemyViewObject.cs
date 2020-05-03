@@ -18,6 +18,7 @@ namespace Ecs.ViewObjects.Implementations
       var entity = world.NewEntity();
       ref var enemyComponent = ref entity.Set<EnemyComponent>();
       enemyComponent.Damage = _damage;
+      enemyComponent.Object = gameObject;
 
       ref var movementComponent = ref entity.Set<MovementComponent>();
       movementComponent.Direction = Vector3.forward;
