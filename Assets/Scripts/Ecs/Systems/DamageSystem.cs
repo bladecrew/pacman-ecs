@@ -6,16 +6,16 @@ namespace Ecs.Systems
 {
   public class DamageSystem : IEcsRunSystem
   {
-    private EcsFilter<CollisionEvent> _collisionFilter;
+    private EcsFilter<CollisionEvent> _eventFilter;
     private EcsFilter<PacmanComponent> _pacmanFilter;
     private EcsFilter<EnemyComponent> _enemiesFilter;
 
     public void Run()
     {
-      foreach (var index in _collisionFilter)
+      foreach (var index in _eventFilter)
       {
-        var target = _collisionFilter.Get1(index).Target;
-        var teaser = _collisionFilter.Get1(index).Teaser;
+        var target = _eventFilter.Get1(index).Target;
+        var teaser = _eventFilter.Get1(index).Teaser;
 
         var pacmanECPair = _pacmanFilter.FirstOrDefault(x => x.Object == target);
 
