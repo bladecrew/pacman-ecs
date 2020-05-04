@@ -12,6 +12,9 @@ namespace Ecs
 
     [SerializeField]
     private GameObject[] _rotationPoints;
+
+    [SerializeField]
+    private GameObject _coinObject;
     
     private EcsSystems _systems;
 
@@ -22,12 +25,14 @@ namespace Ecs
       Instance = this;
       _systems = new EcsSystems(World);
       _systems
+        .Add(new CoinSpawningInitSystem())
         .Add(new FindingDirectionSystem())
         .Add(new InputSystem())
         .Add(new MovementSystem())
         .Add(new DamageSystem())
         .OneFrame<CollisionEvent>()
         .Inject(new RaycastService(_rotationPoints))
+        .Inject(new CoinSpawningService(_coinObject, _rotationPoints))
         .Init();
     
 #if UNITY_EDITOR

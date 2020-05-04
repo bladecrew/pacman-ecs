@@ -20,6 +20,7 @@
             <e p="EcsExtensions.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="Systems" t="Include">
+              <e p="CoinSpawningInitSystem.cs" t="Include" />
               <e p="DamageSystem.cs" t="Include" />
               <e p="FindingDirectionSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
@@ -35,6 +36,7 @@
             </e>
           </e>
           <e p="Services" t="Include">
+            <e p="CoinSpawningService.cs" t="Include" />
             <e p="RaycastService.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
