@@ -16,7 +16,16 @@ namespace Services
 
     public void Spawn(EcsWorld world, Vector3 startPosition, Vector3 endPosition)
     {
-      world.NewViewObject(_coin, endPosition);
+      var distance = Vector3.Distance(startPosition, endPosition);
+        
+      for (var i = 1; i < distance; i++)
+      {
+        var position = Vector3.MoveTowards(startPosition, endPosition, i);
+        if(position.normalized == endPosition.normalized || position.normalized == startPosition.normalized)
+          continue;
+        
+        world.NewViewObject(_coin, position);
+      }
     }
   }
 }

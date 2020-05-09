@@ -21,8 +21,10 @@ namespace Ecs.Systems
         return;
 
       var startPosition = pacmanEcsData.Component.Object.transform.position;
-      
-      FindPlaceAndSpawn(startPosition);
+      var seeingPoints = _raycastService.SeeingPoints(startPosition).ToArray();
+
+      foreach (var point in seeingPoints)
+        FindPlaceAndSpawn(point);
     }
 
     private readonly List<Vector3> _filledPositions = new List<Vector3>();
@@ -32,10 +34,11 @@ namespace Ecs.Systems
 
       if (seeingPoints.Length == 0)
         return;
+      
+      _filledPositions.Add(startPosition);
 
       foreach (var endPosition in seeingPoints)
       {
-        _filledPositions.Add(endPosition);
         _coinSpawningService.Spawn(_world, startPosition, endPosition);
         FindPlaceAndSpawn(endPosition);
       }
