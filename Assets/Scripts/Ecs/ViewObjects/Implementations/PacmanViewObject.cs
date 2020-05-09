@@ -12,7 +12,7 @@ namespace Ecs.ViewObjects.Implementations
     [SerializeField]
     private float _speed;
     
-    protected override void Inject(EcsWorld world)
+    public override void Inject(EcsWorld world)
     { 
       var entity = world.NewEntity();
       

@@ -1,24 +1,22 @@
+using Ecs;
+using Ecs.ViewObjects.Implementations;
+using Leopotam.Ecs;
 using UnityEngine;
 
 namespace Services
 {
   public class CoinSpawningService
   {
-    private GameObject _coin;
-    private GameObject[] _rotationPoints;
+    private CoinViewObject _coin;
 
-    public CoinSpawningService(GameObject coin, GameObject[] rotationPoints)
+    public CoinSpawningService(CoinViewObject coin)
     {
       _coin = coin;
-      _rotationPoints = rotationPoints;
     }
 
-    public void Spawn()
+    public void Spawn(EcsWorld world, Vector3 startPosition, Vector3 endPosition)
     {
-      /**
-       * todo : iterate on rotation points for finding corners
-       * todo : then spawn coin objects between rotation points
-       */
+      world.NewViewObject(_coin, endPosition);
     }
   }
 }

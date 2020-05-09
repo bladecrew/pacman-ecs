@@ -25,9 +25,11 @@
               <e p="FindingDirectionSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
               <e p="MovementSystem.cs" t="Include" />
+              <e p="ViewObjectsInitSystem.cs" t="Include" />
             </e>
             <e p="ViewObjects" t="Include">
               <e p="Implementations" t="Include">
+                <e p="CoinViewObject.cs" t="Include" />
                 <e p="EnemyViewObject.cs" t="Include" />
                 <e p="GameViewObject.cs" t="Include" />
                 <e p="PacmanViewObject.cs" t="Include" />

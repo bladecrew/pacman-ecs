@@ -1,5 +1,6 @@
 using Ecs.Components.Events;
 using Ecs.Systems;
+using Ecs.ViewObjects.Implementations;
 using Leopotam.Ecs;
 using Services;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace Ecs
     private GameObject[] _rotationPoints;
 
     [SerializeField]
-    private GameObject _coinObject;
+    private CoinViewObject _coinObject;
     
     private EcsSystems _systems;
 
@@ -24,7 +25,9 @@ namespace Ecs
     {
       Instance = this;
       _systems = new EcsSystems(World);
+      
       _systems
+        .Add(new ViewObjectsInitSystem())  
         .Add(new CoinSpawningInitSystem())
         .Add(new FindingDirectionSystem())
         .Add(new InputSystem())
@@ -32,7 +35,7 @@ namespace Ecs
         .Add(new DamageSystem())
         .OneFrame<CollisionEvent>()
         .Inject(new RaycastService(_rotationPoints))
-        .Inject(new CoinSpawningService(_coinObject, _rotationPoints))
+        .Inject(new CoinSpawningService(_coinObject))
         .Init();
     
 #if UNITY_EDITOR

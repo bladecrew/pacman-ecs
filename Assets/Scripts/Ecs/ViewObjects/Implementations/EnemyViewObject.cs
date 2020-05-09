@@ -13,7 +13,7 @@ namespace Ecs.ViewObjects.Implementations
     private float _speed;
 
 
-    protected override void Inject(EcsWorld world)
+    public override void Inject(EcsWorld world)
     {
       var entity = world.NewEntity();
       ref var enemyComponent = ref entity.Set<EnemyComponent>();
