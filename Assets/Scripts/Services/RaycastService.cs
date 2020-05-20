@@ -7,7 +7,7 @@ namespace Services
   public class RaycastService
   {
     private IEnumerable<GameObject> _filter;
-    
+
     public RaycastService(IEnumerable<GameObject> filter)
     {
       _filter = filter;
@@ -19,11 +19,13 @@ namespace Services
 
       foreach (var direction in directions)
       {
-        if (!Physics.Raycast(position, direction, out var hit) ||
-            !_filter.Contains(hit.transform.gameObject))
-          continue;
+        var objectsOnLines = Physics.RaycastAll(position, direction);
 
-        result.Add(hit.transform.position);
+        result.AddRange(
+          from hit in objectsOnLines
+          where _filter.Contains(hit.transform.gameObject)
+          select hit.transform.position
+        );
 
 #if UNITY_EDITOR
         Debug.DrawRay(position, direction, Color.green, 50, true);
@@ -32,7 +34,7 @@ namespace Services
 
       return result;
     }
-    
+
     public List<Vector3> SeeingPoints(Vector3 position)
     {
       return SeeingPoints(position, new[] {Vector3.forward, Vector3.left, Vector3.back, Vector3.right});
