@@ -10,6 +10,7 @@
         <e p="Scripts" t="Include">
           <e p="Ecs" t="Include">
             <e p="Components" t="Include">
+              <e p="CoinComponent.cs" t="Include" />
               <e p="EnemyComponent.cs" t="Include" />
               <e p="Events" t="Include">
                 <e p="CollisionEvent.cs" t="Include" />
@@ -22,6 +23,7 @@
             <e p="GameManager.cs" t="Include" />
             <e p="Systems" t="Include">
               <e p="CoinSpawningInitSystem.cs" t="Include" />
+              <e p="CoinSystem.cs" t="Include" />
               <e p="DamageSystem.cs" t="Include" />
               <e p="FindingDirectionSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />

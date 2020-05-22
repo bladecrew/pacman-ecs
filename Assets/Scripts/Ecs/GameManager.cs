@@ -33,6 +33,7 @@ namespace Ecs
         .Add(new InputSystem())
         .Add(new MovementSystem())
         .Add(new DamageSystem())
+        .Add(new CoinSystem())
         .OneFrame<CollisionEvent>()
         .Inject(new RaycastService(_rotationPoints))
         .Inject(new CoinSpawningService(_coinObject))
