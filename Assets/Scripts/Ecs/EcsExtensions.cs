@@ -10,9 +10,11 @@ namespace Ecs
 {
   public static class EcsExtensions
   {
-    public static ViewObject NewViewObject(this EcsWorld world, ViewObject viewObject, Vector3? position)
+    public static void NewViewObject(this EcsWorld world, ViewObject template, Vector3? position)
     {
-      return Object.Instantiate(viewObject, position ?? Vector3.zero, Quaternion.identity);
+      Object
+        .Instantiate(template, position ?? Vector3.zero, Quaternion.identity)
+        .Inject(world);
     }
     
     public static IEnumerable<EntityComponentPair<T>> Where<T>(this EcsFilter<T> filter, Func<T, bool> predicate)
