@@ -9,6 +9,7 @@ namespace Ecs.Systems
   {
     private EcsFilter<CollisionEvent> _eventFilter;
     private EcsFilter<CoinComponent> _coinFilter;
+    private EcsFilter<PacmanComponent> _pacmanFilter;
     
     public void Run()
     {
@@ -18,8 +19,17 @@ namespace Ecs.Systems
         
         if(coin == null)
           continue;
+
+        var pacman = _pacmanFilter.FirstOrDefault();
+        if(pacman == null)
+          continue;
+
+        ref var pacmanComponent = ref pacman.Entity.Set<PacmanComponent>();
+        pacmanComponent.Points += coin.Component.Points;
         
-        Debug.Log("Coin Getted!");
+        Object.Destroy(coin.Component.Target);
+        
+        coin.Entity.Destroy();
       }
     }
   }
