@@ -2,6 +2,7 @@ using Ecs.Components.Events;
 using Ecs.Systems;
 using Ecs.ViewObjects.Implementations;
 using Leopotam.Ecs;
+using Leopotam.Ecs.Ui.Systems;
 using Services;
 using UnityEngine;
 
@@ -16,6 +17,9 @@ namespace Ecs
 
     [SerializeField]
     private CoinViewObject _coinObject;
+
+    [SerializeField]
+    private EcsUiEmitter _uiEmitter;
     
     private EcsSystems _systems;
 
@@ -34,9 +38,11 @@ namespace Ecs
         .Add(new MovementSystem())
         .Add(new DamageSystem())
         .Add(new CoinSystem())
+        .Add(new UiSystem())
         .OneFrame<CollisionEvent>()
         .Inject(new RaycastService(_rotationPoints))
         .Inject(new CoinSpawningService(_coinObject))
+        .InjectUi(_uiEmitter)
         .Init();
     
 #if UNITY_EDITOR
