@@ -53,6 +53,23 @@ namespace Ecs
       return null;
     }
 
+    public static EntityComponentPair<T> First<T>(this EcsFilter<T> filter, Func<T, bool> predicate = null)
+      where T : struct
+    {
+      foreach (var index in filter)
+      {
+        var component = filter.Get1(index);
+        if (predicate == null || predicate.Invoke(component))
+          return new EntityComponentPair<T>
+          {
+            Component = component,
+            Entity = filter.GetEntity(index)
+          };
+      }
+      
+      throw new ArgumentNullException();
+    }
+
     public static bool IsDefault<T>(this T value)
       where T : struct
     {
