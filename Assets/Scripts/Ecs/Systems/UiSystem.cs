@@ -2,8 +2,10 @@ using System.Globalization;
 using Ecs.Components;
 using Ecs.Components.Events;
 using Leopotam.Ecs;
+using Leopotam.Ecs.Ui.Components;
 using Leopotam.Ecs.Ui.Systems;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Ecs.Systems
@@ -13,6 +15,8 @@ namespace Ecs.Systems
     private EcsFilter<PacmanComponent> _filter;
 
     private EcsFilter<GameStateChangedEvent> _eventsFilter;
+
+    readonly EcsFilter<EcsUiClickEvent> _clickEvents;
 
     [EcsUiNamed("CoinsText")]
     private Text _coinsText;
@@ -47,6 +51,15 @@ namespace Ecs.Systems
         var @event = _eventsFilter.Get1(index);
         _looseGrop.gameObject.SetActive(@event.State == GameState.Dead);
         _winGroup.gameObject.SetActive(@event.State == GameState.Win);
+      }
+
+      foreach (var index in _clickEvents)
+      {
+        ref var @event = ref _clickEvents.Get1(index);
+        if (@event.WidgetName != "RestartButton")
+          continue;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
       }
     }
   }
