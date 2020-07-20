@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Ecs.Systems
 {
-  public class UiSystem : IEcsRunSystem
+  public class UiSystem : IEcsRunSystem, IEcsInitSystem
   {
     private EcsFilter<PacmanComponent> _filter;
 
@@ -19,6 +19,18 @@ namespace Ecs.Systems
 
     [EcsUiNamed("HealthText")]
     private Text _healthText;
+
+    [EcsUiNamed("LooseGroup")]
+    private GameObject _looseGrop;
+
+    [EcsUiNamed("WinGroup")]
+    private GameObject _winGroup;
+
+    public void Init()
+    {
+      _looseGrop.gameObject.SetActive(false);
+      _winGroup.gameObject.SetActive(false);
+    }
 
     public void Run()
     {
@@ -33,9 +45,8 @@ namespace Ecs.Systems
       foreach (var index in _eventsFilter)
       {
         var @event = _eventsFilter.Get1(index);
-
-        if (@event.State != GameState.Play)
-          Time.timeScale = 0f;
+        _looseGrop.gameObject.SetActive(@event.State == GameState.Dead);
+        _winGroup.gameObject.SetActive(@event.State == GameState.Win);
       }
     }
   }
